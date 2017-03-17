@@ -1,0 +1,2 @@
+class MarblesController < ApplicationController
+end

@@ -1,0 +1,7 @@
+<div style="text-align:center">
+  <h1>팀 현황</h1>
+  <% @teams.each do |t| %>
+    <%= t.name %>, <%= t.score %>점
+    <br>
+  <% end %>
+</div>

@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h1>팀 등록</h1>
+
+  <%= form_for @team do |f| %>
+
+      <%= f.text_field :name, autofocus: true, placeholder: "팀명" %> <br>
+
+      <%= f.submit "가입" %> <br>
+
+  <% end %>
+</div>

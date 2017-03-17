@@ -1,0 +1,15 @@
+<div style="text-align:center">
+  <h1>결합</h1>
+  <h1>벌칙: 꼴찌 조가 <span style="color:red">소주 한 병</span>을 나눠마시게 된다.</h1>
+
+  <%= form_tag combinations_path do %>
+      <%= select_tag 'games', options_for_select([[1,1],[2,2],[3,3],[4,4],[5,5]].insert(0, [@msg,@msg])  ), selected: @msg, onchange: "window.location.replace('/combinations/'+this.value);" %>
+  <% end %>
+
+  <h2>룰 설명</h2>
+
+  <div>
+  <%= image_tag 'combinations_rule.png' %>
+  </div>
+
+</div>
