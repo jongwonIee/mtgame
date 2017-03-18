@@ -16,6 +16,16 @@ class TeamsController < ApplicationController
     end
   end
 
+  def add
+    Team.add(params[:name])
+    redirect_to teams_path
+  end
+
+  def match
+    Team.match
+    redirect_to :back
+  end
+
   private
   def team_params
     params.require(:team).permit(:name)

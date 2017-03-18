@@ -1,9 +1,12 @@
 <div style="text-align:center">
   <h1>팀 현황</h1>
   <div style="font-size:50px">
-    <% @teams.each do |t| %>
-      <%= t.name %>, <%= t.score %>점
-      <br>
+    <% if Team.ids.length > 3 %>
+      <% @teams.each do |t| %>
+        <%= t.name %>, <%= t.score %>점 <%= t.member %>
+        <br>
+      <% end %>
     <% end %>
+    <%= button_to '팀 매치', match_path %>
   </div>
 </div>

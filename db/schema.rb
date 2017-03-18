@@ -13,13 +13,15 @@
 ActiveRecord::Schema.define(version: 20170317123054) do
 
   create_table "combinations", force: :cascade do |t|
-    t.string   "answer"
+    t.text     "answer"
+    t.integer  "len"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "teams", force: :cascade do |t|
     t.string   "name"
+    t.text     "member"
     t.integer  "score",      default: 0
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false

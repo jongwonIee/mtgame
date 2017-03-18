@@ -10,4 +10,8 @@
       <%= letters[i-1] %>
     <% end %>
   </div>
+
+  <%= form_tag add_path do %>
+      1점추가<%= text_field_tag :name %>
+  <% end %>
 </div>
