@@ -1,3 +1,15 @@
 <div style="text-align:center">
-  <%= image_tag 'combinations_'+params[:id]+'.png' %>
+  <div style="font-size:30px">
+    <%= image_tag 'combinations_'+params[:id]+'.png' %>
+    <%= form_tag  do %>
+        정답
+        <%= text_field_tag :answer %> <br>
+        팀명
+        <%= text_field_tag :name %> <br>
+
+        <%= submit_tag "제출" %>
+    <% end %>
+    <br>
+      <%= @msg %>
+  </div>
 </div>

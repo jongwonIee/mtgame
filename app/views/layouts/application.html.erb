@@ -10,12 +10,15 @@
 
   <body>
   <div style="text-align:center">
-    <%= link_to "팀 등록", new_team_path %>
-    <%= link_to "팀 현황", teams_path %>
-    <%= link_to "결합", combinations_path %>
-    <%= link_to "초성 퀴즈", words_path %>
-    <%= link_to "혼돈의 카오스", chaoses_path %>
-    <%= link_to "주루마블", marbles_path %>
+    <div style="font-size:30px">
+      <%= link_to "팀 등록", new_team_path %>
+      <%= link_to "팀 현황", teams_path %>
+      <%= link_to "결합", combinations_path %>
+      <%= link_to "초성 퀴즈", words_path %>
+      <%= link_to "혼돈의 카오스", chaoses_path %>
+      <%= link_to "주루마블", marbles_path %>
+      <%= link_to "벌칙", penalties_path %>
+    </div>
   </div>
     <%= yield %>
   </body>

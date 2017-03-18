@@ -8,6 +8,7 @@ class ChaosesController < ApplicationController
                  "지렁이처럼기어다니기",
                  "단체로벽잡고광춤추기",
                  "춤추며곰세마리부르기",
-                 "조성국씨모자뺏어쓰기",]
+                 "조성국씨모자뺏어쓰기",
+                 "이진호씨와랩배틀하기"]
   end
 end

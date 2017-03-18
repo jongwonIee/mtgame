@@ -1,0 +1,32 @@
+<div style="text-align:center">
+  <% if @random == 1 %>
+      <br><br><br>
+      <div style="font-size:100px">
+        <%= ["사과", "자몽", "피치", "후레쉬"].sample %> 먹고 쿠우~
+      </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h8QM-3GsjFI?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  <% elsif @random == 2 %>
+      <br><br><br><br><br>
+    <div style="font-size:100px">
+      <span style="color:red">레일즈</span> 맘대로 <span style="color:mediumpurple">칵테일</span> <br>
+      <%= ["콜라", "써니텐", "감귤주스", "피치", "후레쉬", "밀키스"].sample %> +
+      <%= ["사과", "자몽", "피치", "후레쉬"].sample %> +
+      <%= ["콜라", "맥주", "후레쉬", "사과", "자몽", "감귤주스", "피치", "후레쉬"].sample %>
+    </div>
+  <% elsif @random == 3 %>
+      <br><br><br><br>
+    <div style="font-size:100px">
+      운영진의 은혜<br><br>
+      <%= ["이종원", "조성국", "이상효", "조상연", "전태훈"].sample %>
+      <%= ["사과", "자몽", "피치", "후레쉬"].sample %>
+    </div>
+  <% elsif @random == 4 %>
+      <br><br><br><br>
+    <div style="font-size:100px">
+      모든 조원<br><br>
+      <%= ["사과", "자몽", "피치", "후레쉬"].sample %>
+    </div>
+  <% end %>
+
+
+</div>

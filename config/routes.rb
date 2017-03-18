@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :chaoses
   resources :marbles
   resources :teams
-  post '/combinations/:id', to: 'courses#show', as: 'show'
+  get 'penalties', to: 'penalties#index'
+  get 'penalty', to: 'penalties#show'
+  post '/combinations/:id', to: 'combinations#show'
   root 'teams#index'
 
 end
