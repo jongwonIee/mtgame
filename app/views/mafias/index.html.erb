@@ -1,0 +1,18 @@
+<div style="text-align:center">
+  <div style="font-size:50px">
+    <% @a = @members.shuffle %>
+    마피아: <% @a[0..2].each do |a| %>
+        <%= a %>
+    <% end %><br>
+    경찰: <% @a[3..5].each do |a| %>
+        <%= a %>
+    <% end %><br>
+    의사: <% @a[6..7].each do |a| %>
+        <%= a %>
+    <% end %><br>
+    외계인: <%= @a[8] %><br>
+    시민: <% @a[9..16].each do |a| %>
+          <%= a %>
+        <% end %>
+  </div>
+</div>

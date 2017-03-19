@@ -16,7 +16,7 @@ class CombinationsController < ApplicationController
       else
         @bool = false
       end
-    elsif false
+    else
       answer[params[:id].to_i-1].each do |a|
         if params[:answer].to_i == a
           team = Team.find_by_name(params[:name])

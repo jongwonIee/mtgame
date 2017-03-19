@@ -4,4 +4,8 @@
   <div style="font-size:400px">
     <%= @letters.sample %><%= @letters.sample %>
   </div>
+
+  <%= form_tag add_path do %>
+      1점추가<%= text_field_tag :name %>
+  <% end %>
 </div>
